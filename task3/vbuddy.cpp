@@ -1067,7 +1067,7 @@ void vbdHex(int digit, int v) {
 
 void vbdPlot(int y, int min, int max) {
   char msg[80];    // max 80 characters
-  std::sprintf(msg, "$p,%d,%d,%d\n", y, min, max); 
+  std::sprintf(msg, "$p,%d,%d,%d\n", y, min, max);  
   serial.writeString(msg); ack();
 }
 
